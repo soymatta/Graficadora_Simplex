@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+th {
+  border: 1px solid black;
+  min-width: 40px;
+  min-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: normal;
+  padding: 4px;
+}
+
+td {
+  border: 1px solid black;
+  min-width: 40px;
+  min-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: normal;
+  padding: 4px;
+}
+/* Obtener td y th vacios */
+td:empty,
+th:empty {
+  border: none;
+}
+
+#tr-footer td {
+  border: none;
+}
+
+section {
+  margin-bottom: 15px;
+}
